@@ -7,7 +7,12 @@ const treasure =
 function App() {
   return (
     <>
-      <a href={treasure}>
+      <a
+        onClick={() => {
+          window.Telegram.WebApp.close();
+        }}
+        href={treasure}
+      >
         <QRcode value={treasure} />
       </a>
     </>
