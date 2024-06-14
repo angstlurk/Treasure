@@ -9,7 +9,9 @@ function App() {
     <>
       <a
         onClick={() => {
-          window.Telegram.WebApp.close();
+          setTimeout(() => {
+            window.Telegram.WebApp.close();
+          }, 500);
         }}
         href={treasure}
       >
